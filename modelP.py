@@ -7,12 +7,13 @@ from keras.layers import MaxPooling2D
 from keras.layers.core import Reshape
 from keras.layers import Flatten
 from keras import optimizers as opt
+from keras import regularizers
 
 
 def createModel():
     model = Sequential()
     #(1,1,15000)    每一个数据是一个1维数据
-    model.add(Conv1D(filters=20, kernel_size = 200, strides= 1,padding = 'valid', input_shape=(15000,1),activation='relu'))
+    model.add(Conv1D(filters=20, kernel_size = 200, strides= 1,padding = 'valid', input_shape=(15000,1),activation='relu',kernel_regularizer=regularizers.l2(0.001)))
     print(model.input_shape)
     print("C1：",end="")
     print(model.output_shape)

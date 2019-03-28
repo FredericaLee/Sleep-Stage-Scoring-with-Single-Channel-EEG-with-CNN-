@@ -1,6 +1,3 @@
-
-
-
 def filelist(path):
     # part = ""
     part = path
@@ -24,3 +21,7 @@ def filelist(path):
         name[1].append(temp+part42)
         part3 = part3+1
     return name
+
+# name = filelist("")
+# for i in range(0,len(name[0])):
+#     print(name[0][i])
