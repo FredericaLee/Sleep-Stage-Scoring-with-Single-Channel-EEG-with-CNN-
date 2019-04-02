@@ -8,5 +8,7 @@ Tsinalis O, Matthews P M, Guo Y, et al. Automatic sleep stage scoring with singl
 Keras + Tensorflow
 
 To List:
-1. L2
-2. Increasing data
+1. training on the massive data
+
+2.adjusting parameters
+
