@@ -2,7 +2,7 @@
 # os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
 import os
 os.environ["CUDA_DEVICE_ORDER"]="PCI_BUS_ID"
-os.environ["CUDA_VISIBLE_DEVICES"]="5"
+os.environ["CUDA_VISIBLE_DEVICES"]="3"
 import dataP
 import modelP
 from keras.models import load_model
@@ -13,7 +13,7 @@ import time
 ############创建模型
 
 stime = time.time()
-# # model =load_model("test1-5x8")
+# # model =load_model("test1-5x8")a
 model = modelP.createModel()
 print("模型准备完成")
 ###########获取文件名称列表
@@ -22,7 +22,7 @@ print("数据路径装填成功")
 # ###########20折交叉验证
 test = 0
 fold = 39
-cir = 1
+cir = 6
 print("开始20折交叉验证")
 for shana in range(0,cir):
     count = 0
